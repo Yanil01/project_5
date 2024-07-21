@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* Container for the entire component */
+.load-more-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Product container */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual product */
+.product {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Disabled button */
+.button-container button[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* End message */
+.end-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666666;
+}
